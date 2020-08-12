@@ -22,18 +22,17 @@
 
   <meta name="description" content="Part 1：MATLAB及其在数学建模中的应用简介MATLAB简介MATLAB 是美国MathWorks公司出品的商业数学软件，用于算法开发、数据可视化、数据分析以及数值计算的高级技术计算语言和交互式环境，主要包括MATLAB和Simulink两大部分。 MATLAB是Matrix &amp; Laboratory两个词的组合，意为矩阵工厂（矩阵实验室）。是由美国Mathworks公司发布的主要">
 <meta property="og:type" content="article">
-<meta property="og:title" content="【专题】 MATLAB及其在数模竞赛中的应用经验分享">
+<meta property="og:title" content="【专题】 MATLAB及其在数模竞赛中的应用经验分享（上）">
 <meta property="og:url" content="http://yoursite.com/2020/08/12/MATLAB_Part_1/index.html">
 <meta property="og:site_name" content="Small Shrimp">
 <meta property="og:description" content="Part 1：MATLAB及其在数学建模中的应用简介MATLAB简介MATLAB 是美国MathWorks公司出品的商业数学软件，用于算法开发、数据可视化、数据分析以及数值计算的高级技术计算语言和交互式环境，主要包括MATLAB和Simulink两大部分。 MATLAB是Matrix &amp; Laboratory两个词的组合，意为矩阵工厂（矩阵实验室）。是由美国Mathworks公司发布的主要">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://yoursite.com/2020/08/12/MATLAB_Part_1/raw.githubusercontent.com/nwpufzh/MarkdownPhotos/master/Pic.1_Sketch%20map%20of%20delivery%20place%20of%20express%20company.png?token=AJRZAC2GLFGI4I4X5BNKFMC7GQCC4">
-<meta property="og:image" content="d:/Software/Hexo/Pics/MATLAB_Photos/Pic_1.png">
+<meta property="og:image" content="https://github.com/nwpufzh/MarkdownPhotos/raw/master/MATLAB_Part_1/Pic_1.png">
 <meta property="article:published_time" content="2020-08-12T06:44:21.000Z">
-<meta property="article:modified_time" content="2020-08-12T15:17:58.210Z">
+<meta property="article:modified_time" content="2020-08-12T16:45:47.451Z">
 <meta property="article:author" content="Zhenghao Feng">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://yoursite.com/2020/08/12/MATLAB_Part_1/raw.githubusercontent.com/nwpufzh/MarkdownPhotos/master/Pic.1_Sketch%20map%20of%20delivery%20place%20of%20express%20company.png?token=AJRZAC2GLFGI4I4X5BNKFMC7GQCC4">
+<meta name="twitter:image" content="https://github.com/nwpufzh/MarkdownPhotos/raw/master/MATLAB_Part_1/Pic_1.png">
 
 <link rel="canonical" href="http://yoursite.com/2020/08/12/MATLAB_Part_1/">
 
@@ -48,7 +47,7 @@
   };
 </script>
 
-  <title>【专题】 MATLAB及其在数模竞赛中的应用经验分享 | Small Shrimp</title>
+  <title>【专题】 MATLAB及其在数模竞赛中的应用经验分享（上） | Small Shrimp</title>
   
 
 
@@ -187,7 +186,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          【专题】 MATLAB及其在数模竞赛中的应用经验分享
+          【专题】 MATLAB及其在数模竞赛中的应用经验分享（上）
         </h1>
 
         <div class="post-meta">
@@ -196,10 +195,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2020-08-12 14:44:21 / 修改时间：23:17:58" itemprop="dateCreated datePublished" datetime="2020-08-12T14:44:21+08:00">2020-08-12</time>
+              <time title="创建时间：2020-08-12 14:44:21" itemprop="dateCreated datePublished" datetime="2020-08-12T14:44:21+08:00">2020-08-12</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-08-13 00:45:47" itemprop="dateModified" datetime="2020-08-13T00:45:47+08:00">2020-08-13</time>
+              </span>
 
           
             <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
@@ -294,8 +299,28 @@
 <p>  现在送货员要将100件货物送到50个地点，如图1所示。</p>
 </li>
 </ul>
-<p><img src="raw.githubusercontent.com/nwpufzh/MarkdownPhotos/master/Pic.1_Sketch%20map%20of%20delivery%20place%20of%20express%20company.png?token=AJRZAC2GLFGI4I4X5BNKFMC7GQCC4" alt="Aaron Swartz"></p>
-<p><img src="D:\Software\Hexo\Pics\MATLAB_Photos\Pic_1.png" alt="avatar"></p>
+<p><img src="https://github.com/nwpufzh/MarkdownPhotos/raw/master/MATLAB_Part_1/Pic_1.png" alt="图 1 快递公司送货地点示意图"></p>
+<center>图 1 快递公司送货地点示意图</center>
+
+<ul>
+<li><p><strong>需要解决的问题</strong></p>
+<p>  问题一：将1~30号货物送到指定地点并返回。要求设计最快完成路线与方式，给出结果并标出送货线路。</p>
+<p>  问题二：假定该送货员从早上8点上班开始送货，且1~30号货物的送达时间不能超过它们的指定送达时间。要求设计最快完成路线与方式并标出送货线路。</p>
+<p>  问题三：若不需要考虑所有货物送达时间限制(包括前30件货物)，现在要将100件货物全部送到指定地点并返回。要求设计最快完成路线与方式，标出送货线路并给出送完所有快件的时间。由于受重量和体积限制，送货员可中途返回取货。不考虑送货员中午休息的时间。</p>
+<p>  以上问题求解尽可能给出模型与算法。</p>
+</li>
+</ul>
+<h3 id="题目思路分析"><a href="#题目思路分析" class="headerlink" title="题目思路分析"></a><font color = blue><strong>题目思路分析</strong></font></h3><ul>
+<li><p><strong>整体思路分析</strong></p>
+<p>  这是一道结合图论与优化策略相结合的经典数学建模问题。问题设置层层递进，从最基本的NP-Hard旅行商问题（详见[注1]）出发，分别增加时间限制与扩大问题规模，需要综合考虑各类送货情形。合理的分组，图论基本模型以及优化算法是解决问题的关键。</p>
+<p>  <em>（注1：旅行推销员问题（英语：Travelling Salesman Problem, TSP）是这样一个问题：给定一系列城市和每对城市之间的距离，求解访问每一座城市一次并回到起始城市的最短回路。它是组合优化中的一个NP难问题，在运筹学和理论计算机科学中非常重要。最早的旅行商问题的数学规划是由Dantzig（1959）等人提出，并且是在最优化领域中进行了深入研究。许多优化方法都用它作为一个测试基准。尽管问题在计算上很困难，但已经有了大量的启发式算法和精确方法来求解数量上万的实例，并且能将误差控制在1%内。）</em></p>
+</li>
+<li><p><strong>问题一分析</strong></p>
+  <font color = red>关键词：TSP问题（旅行商问题）；Floyed最短路算法；0-1规划。</font>
+
+<p>  本问要求送货员以最快的速度将1~30号货物送到指定地点并返回，需要送货达到的位置标注如图2所示。在行驶速度一定的情况下，要求送货的最短时间，即要求行驶的最短距离。为了求得最快完成的路线，由于此题只涉及到30件货物，规模较小，故可建立基于TSP问题的0-1规划模型。首先根据表2所给数据，利用MATLAB计算出所给指定路线中任两点之间的距离，构建矩阵 \(d_{ij}\) , *表示\(i\)点和\(j\)点之间的距离，若\(i\)点和\(j\)点不连通，则将 \(d_{ij}\) 设定为无穷大（INF）。接着，用Floyd算法算得任意两点间的最短路径，并构建出包含O点在内的51个送货点的完全图 \(G = (V,E)\) ，即将该问题转化成用图论描述的TSP问题。然后采用0-1规划的方法，并利用LINGO软件进行求解。最终得到最快完成路线，并利用MATLAB绘制最优路线图，如图3所示。</p>
+</li>
+</ul>
 
     </div>
 
@@ -383,7 +408,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Part-1%EF%BC%9AMATLAB%E5%8F%8A%E5%85%B6%E5%9C%A8%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E4%B8%AD%E7%9A%84%E5%BA%94%E7%94%A8%E7%AE%80%E4%BB%8B"><span class="nav-number">1.</span> <span class="nav-text">Part 1：MATLAB及其在数学建模中的应用简介</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#MATLAB%E7%AE%80%E4%BB%8B"><span class="nav-number">1.1.</span> <span class="nav-text">MATLAB简介</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#MATLAB%E4%BD%BF%E7%94%A8%E4%BD%93%E9%AA%8C%EF%BC%88My-Personal%EF%BC%89"><span class="nav-number">1.2.</span> <span class="nav-text">MATLAB使用体验（My Personal）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#MATLAB%E5%9C%A8%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E4%B8%AD%E7%9A%84%E4%B8%BB%E8%A6%81%E5%BA%94%E7%94%A8%E6%96%B9%E9%9D%A2%E3%80%81%E5%BA%94%E7%94%A8%E6%96%B9%E5%BC%8F%E4%B8%8E%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3"><span class="nav-number">1.3.</span> <span class="nav-text">MATLAB在数学建模中的主要应用方面、应用方式与编程思想</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Part-2%EF%BC%9A%E5%88%86%E6%9E%90MATLAB%E5%9C%A8%E4%B8%80%E9%81%93%E6%95%B0%E6%A8%A1%E7%AB%9E%E8%B5%9B%E9%A2%98%E4%B8%AD%E7%9A%84%E5%BA%94%E7%94%A8"><span class="nav-number">2.</span> <span class="nav-text">Part 2：分析MATLAB在一道数模竞赛题中的应用</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%80%81%E8%B4%A7%E7%BA%BF%E8%B7%AF%E8%AE%BE%E8%AE%A1%E9%97%AE%E9%A2%98"><span class="nav-number">2.1.</span> <span class="nav-text">送货线路设计问题</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Part-1%EF%BC%9AMATLAB%E5%8F%8A%E5%85%B6%E5%9C%A8%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E4%B8%AD%E7%9A%84%E5%BA%94%E7%94%A8%E7%AE%80%E4%BB%8B"><span class="nav-number">1.</span> <span class="nav-text">Part 1：MATLAB及其在数学建模中的应用简介</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#MATLAB%E7%AE%80%E4%BB%8B"><span class="nav-number">1.1.</span> <span class="nav-text">MATLAB简介</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#MATLAB%E4%BD%BF%E7%94%A8%E4%BD%93%E9%AA%8C%EF%BC%88My-Personal%EF%BC%89"><span class="nav-number">1.2.</span> <span class="nav-text">MATLAB使用体验（My Personal）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#MATLAB%E5%9C%A8%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E4%B8%AD%E7%9A%84%E4%B8%BB%E8%A6%81%E5%BA%94%E7%94%A8%E6%96%B9%E9%9D%A2%E3%80%81%E5%BA%94%E7%94%A8%E6%96%B9%E5%BC%8F%E4%B8%8E%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3"><span class="nav-number">1.3.</span> <span class="nav-text">MATLAB在数学建模中的主要应用方面、应用方式与编程思想</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Part-2%EF%BC%9A%E5%88%86%E6%9E%90MATLAB%E5%9C%A8%E4%B8%80%E9%81%93%E6%95%B0%E6%A8%A1%E7%AB%9E%E8%B5%9B%E9%A2%98%E4%B8%AD%E7%9A%84%E5%BA%94%E7%94%A8"><span class="nav-number">2.</span> <span class="nav-text">Part 2：分析MATLAB在一道数模竞赛题中的应用</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%80%81%E8%B4%A7%E7%BA%BF%E8%B7%AF%E8%AE%BE%E8%AE%A1%E9%97%AE%E9%A2%98"><span class="nav-number">2.1.</span> <span class="nav-text">送货线路设计问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%A2%98%E7%9B%AE%E6%80%9D%E8%B7%AF%E5%88%86%E6%9E%90"><span class="nav-number">2.2.</span> <span class="nav-text">题目思路分析</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -399,7 +424,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">3</span>
+          <span class="site-state-item-count">2</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
