@@ -199,7 +199,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-08-13 11:09:00" itemprop="dateModified" datetime="2020-08-13T11:09:00+08:00">2020-08-13</time>
+                <time title="修改时间：2020-08-13 11:23:45" itemprop="dateModified" datetime="2020-08-13T11:23:45+08:00">2020-08-13</time>
               </span>
 
           
@@ -213,18 +213,18 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h2 id="Part-1：MATLAB及其在数学建模中的应用简介"><a href="#Part-1：MATLAB及其在数学建模中的应用简介" class="headerlink" title="Part 1：MATLAB及其在数学建模中的应用简介"></a>Part 1：MATLAB及其在数学建模中的应用简介</h2><h3 id="Course-Note"><a href="#Course-Note" class="headerlink" title="Course Note"></a><font color = blue><strong>Course Note</strong></font></h3><p><strong>本文为 “备战数模——Matlab学习打卡活动第三讲”公开课 的课件资料（2020 / 03 / 29），视频已上传至B站</strong></p>
+          <h2 id="Part-1：MATLAB及其在数学建模中的应用简介"><a href="#Part-1：MATLAB及其在数学建模中的应用简介" class="headerlink" title="Part 1：MATLAB及其在数学建模中的应用简介"></a>Part 1：MATLAB及其在数学建模中的应用简介</h2><h3 id="Course-Note"><a href="#Course-Note" class="headerlink" title="Course Note"></a><font color = blue>Course Note</font></h3><p><strong>本文为 “备战数模——Matlab学习打卡活动第三讲”公开课 的课件资料（2020 / 03 / 29）</strong></p>
 <p><strong>主要内容：Matlab软件在数模竞赛中的应用经验分享 TSP问题 Floyd算法</strong></p>
-<p><strong>B站录播链接：<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1364y1u751?from=search&amp;seid=11692844840742221172">【MATLAB】备战数模—MATLAB公开课第三讲 MATLAB软件在数学建模竞赛中的应用分享</a></strong></p>
-<p><strong>课程资料、程序源代码链接： <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/13I2G-fv8u2ZajcqCHCFAcw">点击获得百度网盘链接</a> 提取码：1cds</strong></p>
+<p><strong>B站录播链接：<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1364y1u751?from=search&amp;seid=11692844840742221172">【MATLAB】备战数模—MATLAB公开课第三讲</a></strong></p>
+<p><strong>课程资料、程序源代码链接： <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/13I2G-fv8u2ZajcqCHCFAcw">点击获得百度网盘链接</a>  提取码：1cds</strong></p>
 <p><strong>欢迎关注我的B站账号：SmallAeroShrimp (bili_47198139034) 一只热爱航空的小虾米~</strong></p>
-<h3 id="MATLAB简介"><a href="#MATLAB简介" class="headerlink" title="MATLAB简介"></a><font color = blue><strong>MATLAB简介</strong></font></h3><p>MATLAB 是美国MathWorks公司出品的商业数学软件，用于<font color = red><strong>算法开发、数据可视化、数据分析以及数值计算</strong></font>的高级技术计算语言和交互式环境，主要包括MATLAB和Simulink两大部分。</p>
-<p>MATLAB是Matrix &amp; Laboratory两个词的组合，意为矩阵工厂（矩阵实验室）。是由美国Mathworks公司发布的主要面对科学计算、可视化以及交互式程序设计的高科技计算环境。它将<font color = red><strong>数值分析、矩阵计算、科学数据可视化以及非线性动态系统的建模和仿真</strong></font>等诸多强大功能集成在一个<font color = red><strong>易于使用的视窗环境中</strong></font>，为科学研究、工程设计以及必须进行有效数值计算的众多科学领域提供了一种全面的解决方案，并在很大程度上摆脱了传统非交互式程序设计语言（如C/C++、Fortran）的编辑模式，代表了当今国际科学计算软件的先进水平。</p>
-<font color = red>**MATLAB和Mathematica、Maple并称为三大数学软件**</font>。它在数学类科技应用软件中在数值计算方面首屈一指。MATLAB可以进行矩阵运算、绘制函数和数据、实现算法、创建用户界面、连接其他编程语言的程序等，主要应用于工程计算、控制设计、信号处理与通讯、图像处理、信号检测、金融建模设计与分析等领域。
+<h3 id="MATLAB简介"><a href="#MATLAB简介" class="headerlink" title="MATLAB简介"></a><font color = blue>MATLAB简介</font></h3><p>MATLAB 是美国MathWorks公司出品的商业数学软件，用于<font color = red>算法开发、数据可视化、数据分析以及数值计算</font>的高级技术计算语言和交互式环境，主要包括MATLAB和Simulink两大部分。</p>
+<p>MATLAB是Matrix &amp; Laboratory两个词的组合，意为矩阵工厂（矩阵实验室）。是由美国Mathworks公司发布的主要面对科学计算、可视化以及交互式程序设计的高科技计算环境。它将<font color = red>数值分析、矩阵计算、科学数据可视化以及非线性动态系统的建模和仿真</font>等诸多强大功能集成在一个<font color = red>易于使用的视窗环境中</font>，为科学研究、工程设计以及必须进行有效数值计算的众多科学领域提供了一种全面的解决方案，并在很大程度上摆脱了传统非交互式程序设计语言（如C/C++、Fortran）的编辑模式，代表了当今国际科学计算软件的先进水平。</p>
+<font color = red>MATLAB和Mathematica、Maple并称为三大数学软件</font>。它在数学类科技应用软件中在数值计算方面首屈一指。MATLAB可以进行矩阵运算、绘制函数和数据、实现算法、创建用户界面、连接其他编程语言的程序等，主要应用于工程计算、控制设计、信号处理与通讯、图像处理、信号检测、金融建模设计与分析等领域。
 
-MATLAB的基本数据单位是矩阵，它的指令表达式与数学、工程中常用的形式十分相似，故<font color = red>**用MATLAB来解算问题要比用C，FORTRAN等语言完成相同的事情简捷得多**</font>，并且MATLAB也吸收了像Maple等软件的优点，使MATLAB成为一个强大的数学软件。在新的版本中也加入了对C，FORTRAN，C++，JAVA的支持。
+MATLAB的基本数据单位是矩阵，它的指令表达式与数学、工程中常用的形式十分相似，故<font color = red>用MATLAB来解算问题要比用C，FORTRAN等语言完成相同的事情简捷得多</font>，并且MATLAB也吸收了像Maple等软件的优点，使MATLAB成为一个强大的数学软件。在新的版本中也加入了对C，FORTRAN，C++，JAVA的支持。
 
-### <font color = blue>**MATLAB使用体验（My Personal）**</font> ###
+### <font color = blue>MATLAB使用体验（My Personal）</font> ###
 
 - **解释型语言（Interpreter），类似Python，语法自由，入门简单~**
 
@@ -248,7 +248,7 @@ MATLAB的基本数据单位是矩阵，它的指令表达式与数学、工程�
 
 - **The King of 数模软件，数模编程选手几乎必备技能**
 
-### <font color = blue>**MATLAB在数学建模中的主要应用方面、应用方式与编程思想**</font> ###
+### <font color = blue>MATLAB在数学建模中的主要应用方面、应用方式与编程思想</font> ###
 
 - **主要应用方面**
 
@@ -286,15 +286,15 @@ MATLAB的基本数据单位是矩阵，它的指令表达式与数学、工程�
 
 ## Part 2：分析MATLAB在一道数模竞赛题中的应用 ##
 
-### <font color = blue>**送货线路设计问题**</font> ###
+### <font color = blue>送货线路设计问题</font> ###
 
 - **问题的背景**
 
-    随着社会的发展，网络的普及率越来越高，网购成为一种新兴的消费方式。随之物流行业也渐渐兴盛，每个送货员需要以最快的速度及时将货物送达，而且他们往往一人送多个地方，<font color = red>**请设计方案使其耗时最少**</font>。
+    随着社会的发展，网络的普及率越来越高，网购成为一种新兴的消费方式。随之物流行业也渐渐兴盛，每个送货员需要以最快的速度及时将货物送达，而且他们往往一人送多个地方，<font color = red>请设计方案使其耗时最少</font>。
 
 - **问题的相关信息**
 
-    现有一快递公司，库房在图1的O点，<font color = red>**一送货员需将货物送至城市内多处，请设计送货方案，使所用时间最少**</font>。假定送货员只能沿这些连通线路行走，而不能走其它任何路线。该地形图的示意图见图1，各点连通信息见表3，各件货物的相关信息见表1，50个送货点的坐标见表2。
+    现有一快递公司，库房在图1的O点，<font color = red>一送货员需将货物送至城市内多处，请设计送货方案，使所用时间最少</font>。假定送货员只能沿这些连通线路行走，而不能走其它任何路线。该地形图的示意图见图1，各点连通信息见表3，各件货物的相关信息见表1，50个送货点的坐标见表2。
 
     假定送货员最大载重50公斤，所带货物最大体积1立方米。送货员的平均速度为24公里/小时。假定每件货物交接花费3分钟，为简化起见，同一地点有多件货物也简单按照每件3分钟交接计算。
 
@@ -305,15 +305,15 @@ MATLAB的基本数据单位是矩阵，它的指令表达式与数学、工程�
 
 - **需要解决的问题**
 
-    问题一：将1~30号货物送到指定地点<font color = red>**并返回**</font>。要求设计最快完成路线与方式，给出结果并标出送货线路。
+    问题一：将1~30号货物送到指定地点<font color = red>并返回</font>。要求设计最快完成路线与方式，给出结果并标出送货线路。
 
-    问题二：假定该送货员从早上8点上班开始送货，且<font color = red>**1~30号货物的送达时间不能超过它们的指定送达时间**</font>。要求设计最快完成路线与方式并标出送货线路。
+    问题二：假定该送货员从早上8点上班开始送货，且<font color = red>1~30号货物的送达时间不能超过它们的指定送达时间</font>。要求设计最快完成路线与方式并标出送货线路。
 
-    问题三：若不需要考虑所有货物送达时间限制(包括前30件货物)，现在要<font color = red>**将100件货物全部送到指定地点并返回**</font>。要求设计最快完成路线与方式，标出送货线路并给出送完所有快件的时间。<font color = red>**由于受重量和体积限制，送货员可中途返回取货**</font>。不考虑送货员中午休息的时间。
+    问题三：若不需要考虑所有货物送达时间限制(包括前30件货物)，现在要<font color = red>将100件货物全部送到指定地点并返回</font>。要求设计最快完成路线与方式，标出送货线路并给出送完所有快件的时间。<font color = red>由于受重量和体积限制，送货员可中途返回取货</font>。不考虑送货员中午休息的时间。
 
     以上问题求解尽可能给出模型与算法。
 
-### <font color = blue>**题目思路分析**</font> ###
+### <font color = blue>题目思路分析</font> ###
 
 - **整体思路分析**
 
@@ -350,7 +350,7 @@ MATLAB的基本数据单位是矩阵，它的指令表达式与数学、工程�
 
 </li>
 </ul>
-<h3 id="本题中MATLAB使用技巧（结合演示-依次介绍）"><a href="#本题中MATLAB使用技巧（结合演示-依次介绍）" class="headerlink" title="本题中MATLAB使用技巧（结合演示+依次介绍）"></a><font color = blue><strong>本题中MATLAB使用技巧（结合演示+依次介绍）</strong></font></h3><ul>
+<h3 id="本题中MATLAB使用技巧（结合演示-依次介绍）"><a href="#本题中MATLAB使用技巧（结合演示-依次介绍）" class="headerlink" title="本题中MATLAB使用技巧（结合演示+依次介绍）"></a><font color = blue>本题中MATLAB使用技巧（结合演示+依次介绍）</font></h3><ul>
 <li><p><strong>数据导入策略*</strong>（怎样导入题设数据，Excel？.txt文本文档？）*</p>
 </li>
 <li><p><strong>基本算法实现*</strong>（图论最短路Floyed算法，Trim/Kruskal最小生成树）*</p>
@@ -360,7 +360,7 @@ MATLAB的基本数据单位是矩阵，它的指令表达式与数学、工程�
 <li><p><strong>结果可视化操作*</strong>（怎样绘制美观、整洁的图片，导出技巧）*</p>
 </li>
 </ul>
-<h3 id="源代码分析与展示（结合MATLAB软件实际操作）"><a href="#源代码分析与展示（结合MATLAB软件实际操作）" class="headerlink" title="源代码分析与展示（结合MATLAB软件实际操作）"></a><font color = blue><strong>源代码分析与展示（结合MATLAB软件实际操作）</strong></font></h3><ul>
+<h3 id="源代码分析与展示（结合MATLAB软件实际操作）"><a href="#源代码分析与展示（结合MATLAB软件实际操作）" class="headerlink" title="源代码分析与展示（结合MATLAB软件实际操作）"></a><font color = blue>源代码分析与展示（结合MATLAB软件实际操作）</font></h3><ul>
 <li><p><strong>注意编程方法，注释技巧</strong></p>
 </li>
 <li><p><strong>灵活使用MATLAB函数</strong></p>
@@ -391,7 +391,7 @@ MATLAB的基本数据单位是矩阵，它的指令表达式与数学、工程�
 </li>
 </ul>
 <h2 id="Part-4：推荐教材-amp-答疑"><a href="#Part-4：推荐教材-amp-答疑" class="headerlink" title="Part 4：推荐教材 &amp; 答疑"></a>Part 4：推荐教材 &amp; 答疑</h2><p>MATLAB软件内容包罗万象，我也仍在学习阶段，如有不足之处请大家指正！推荐几本我觉得比较不错的MATLAB教材与比较好的学习资源，大家可以参考一下啦。</p>
-<h3 id="MATLAB-学习教程推荐"><a href="#MATLAB-学习教程推荐" class="headerlink" title="MATLAB 学习教程推荐"></a><font color = blue><strong>MATLAB 学习教程推荐</strong></font></h3><ul>
+<h3 id="MATLAB-学习教程推荐"><a href="#MATLAB-学习教程推荐" class="headerlink" title="MATLAB 学习教程推荐"></a><font color = blue>MATLAB 学习教程推荐</font></h3><ul>
 <li><p><strong>《MATLAB教程》——<font color = red>MATLAB入门推荐</font></strong></p>
 <p>  <strong><em>张志涌, 杨祖樱. MATLAB教程[M]. 北京: 北京航空航天大学出版社, 2010: 202-216.</em></strong></p>
 <ul>
@@ -444,12 +444,12 @@ MATLAB的基本数据单位是矩阵，它的指令表达式与数学、工程�
 </ul>
 </li>
 </ul>
-<h3 id="MATLAB-学习资源推荐"><a href="#MATLAB-学习资源推荐" class="headerlink" title="MATLAB 学习资源推荐"></a><font color = blue><strong>MATLAB 学习资源推荐</strong></font></h3><ul>
+<h3 id="MATLAB-学习资源推荐"><a href="#MATLAB-学习资源推荐" class="headerlink" title="MATLAB 学习资源推荐"></a><font color = blue>MATLAB 学习资源推荐</font></h3><ul>
 <li><p><strong>MathWorks Home 官方网站，官方指南（可下载）</strong></p>
-<p>  Link: <a target="_blank" rel="noopener" href="https://www.mathworks.com/products/matlab-home.html">MathWorks Home</a></p>
+<p>  Link: <strong><a target="_blank" rel="noopener" href="https://www.mathworks.com/products/matlab-home.html">MathWorks Home</a></strong></p>
 </li>
 <li><p><strong>中国大学MOOC课程</strong></p>
-<p>  Link: <a target="_blank" rel="noopener" href="https://www.icourse163.org/course/NWPU-1003545127">数学建模</a></p>
+<p>  Link: <strong><a target="_blank" rel="noopener" href="https://www.icourse163.org/course/NWPU-1003545127">数学建模</a></strong></p>
 </li>
 <li><p><strong>Up主在线公开课资源</strong></p>
 </li>
