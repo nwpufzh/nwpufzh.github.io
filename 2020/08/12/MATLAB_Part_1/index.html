@@ -20,12 +20,12 @@
     var CONFIG = {"hostname":"nwpufzh.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="Part 1：MATLAB及其在数学建模中的应用简介Course Note本文为 “备战数模——Matlab学习打卡活动第三讲”公开课 的课件资料（2020 &#x2F; 03 &#x2F; 29） 主要内容：Matlab软件在数模竞赛中的应用经验分享 TSP问题 Floyd算法 B站录播链接：【MATLAB】备战数模—MATLAB公开课第三讲 课程资料、程序源代码链接： 点击获得百度网盘链接  提取码：1cds 欢">
+  <meta name="description" content="Part 1：MATLAB及其在数学建模中的应用简介Course Note本文为 “备战数模——Matlab学习打卡活动第三讲”公开课 的课件资料（2020 &#x2F; 03 &#x2F; 29） 主要内容：Matlab软件在数模竞赛中的应用经验分享 TSP问题 Floyd算法">
 <meta property="og:type" content="article">
 <meta property="og:title" content="【原创】 MATLAB及其在数模竞赛中的应用经验分享（上）">
 <meta property="og:url" content="http://nwpufzh.github.io/2020/08/12/MATLAB_Part_1/index.html">
 <meta property="og:site_name" content="Small Shrimp">
-<meta property="og:description" content="Part 1：MATLAB及其在数学建模中的应用简介Course Note本文为 “备战数模——Matlab学习打卡活动第三讲”公开课 的课件资料（2020 &#x2F; 03 &#x2F; 29） 主要内容：Matlab软件在数模竞赛中的应用经验分享 TSP问题 Floyd算法 B站录播链接：【MATLAB】备战数模—MATLAB公开课第三讲 课程资料、程序源代码链接： 点击获得百度网盘链接  提取码：1cds 欢">
+<meta property="og:description" content="Part 1：MATLAB及其在数学建模中的应用简介Course Note本文为 “备战数模——Matlab学习打卡活动第三讲”公开课 的课件资料（2020 &#x2F; 03 &#x2F; 29） 主要内容：Matlab软件在数模竞赛中的应用经验分享 TSP问题 Floyd算法">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://nwpufzh.github.io/2020/08/12/MATLAB_Part_1/Pic_1.png">
 <meta property="og:image" content="http://nwpufzh.github.io/2020/08/12/MATLAB_Part_1/Pic_2.png">
@@ -35,7 +35,7 @@
 <meta property="og:image" content="http://nwpufzh.github.io/2020/08/12/MATLAB_Part_1/Pic_6.png">
 <meta property="og:image" content="http://nwpufzh.github.io/2020/08/12/MATLAB_Part_1/Pic_7.png">
 <meta property="article:published_time" content="2020-08-12T06:44:21.000Z">
-<meta property="article:modified_time" content="2020-08-21T09:05:33.813Z">
+<meta property="article:modified_time" content="2020-08-21T09:56:50.670Z">
 <meta property="article:author" content="Zhenghao Feng">
 <meta property="article:tag" content="MATLAB">
 <meta property="article:tag" content="数学建模">
@@ -207,7 +207,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-08-21 17:05:33" itemprop="dateModified" datetime="2020-08-21T17:05:33+08:00">2020-08-21</time>
+                <time title="修改时间：2020-08-21 17:56:50" itemprop="dateModified" datetime="2020-08-21T17:56:50+08:00">2020-08-21</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -243,10 +243,10 @@
       
         <h2 id="Part-1：MATLAB及其在数学建模中的应用简介"><a href="#Part-1：MATLAB及其在数学建模中的应用简介" class="headerlink" title="Part 1：MATLAB及其在数学建模中的应用简介"></a>Part 1：MATLAB及其在数学建模中的应用简介</h2><h3 id="Course-Note"><a href="#Course-Note" class="headerlink" title="Course Note"></a><font color="blue">Course Note</font></h3><p><strong>本文为 “备战数模——Matlab学习打卡活动第三讲”公开课 的课件资料（2020 / 03 / 29）</strong></p>
 <p><strong>主要内容：Matlab软件在数模竞赛中的应用经验分享 TSP问题 Floyd算法</strong></p>
+<a id="more"></a>
 <p><strong>B站录播链接：<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1364y1u751?from=search&amp;seid=11692844840742221172">【MATLAB】备战数模—MATLAB公开课第三讲</a></strong></p>
 <p><strong>课程资料、程序源代码链接： <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/13I2G-fv8u2ZajcqCHCFAcw">点击获得百度网盘链接</a>  提取码：1cds</strong></p>
 <p><strong>欢迎关注我的B站账号：SmallAeroShrimp (bili_47198139034) 一只热爱航空的小虾米~</strong></p>
-<a id="more"></a>
 <h3 id="MATLAB简介"><a href="#MATLAB简介" class="headerlink" title="MATLAB简介"></a><font color="blue">MATLAB简介</font></h3><p>MATLAB 是美国MathWorks公司出品的商业数学软件，用于<strong>算法开发、数据可视化、数据分析以及数值计算</strong>的高级技术计算语言和交互式环境，主要包括MATLAB和Simulink两大部分。</p>
 <p>MATLAB是Matrix &amp; Laboratory两个词的组合，意为矩阵工厂（矩阵实验室）。是由美国Mathworks公司发布的主要面对科学计算、可视化以及交互式程序设计的高科技计算环境。它将<strong>数值分析、矩阵计算、科学数据可视化以及非线性动态系统的建模和仿真</strong>等诸多强大功能集成在一个<strong>易于使用的视窗环境中</strong>，为科学研究、工程设计以及必须进行有效数值计算的众多科学领域提供了一种全面的解决方案，并在很大程度上摆脱了传统非交互式程序设计语言（如C/C++、Fortran）的编辑模式，代表了当今国际科学计算软件的先进水平。</p>
 <p><strong>MATLAB和Mathematica、Maple并称为三大数学软件</strong>。它在数学类科技应用软件中在数值计算方面首屈一指。MATLAB可以进行矩阵运算、绘制函数和数据、实现算法、创建用户界面、连接其他编程语言的程序等，主要应用于工程计算、控制设计、信号处理与通讯、图像处理、信号检测、金融建模设计与分析等领域。</p>
@@ -690,7 +690,6 @@
   </div>
 
   
-  <script color='0,0,0' opacity='0.5' zIndex='-1' count='150' src="/lib/canvas-nest/canvas-nest-nomobile.min.js"></script>
   <script src="/lib/anime.min.js"></script>
   <script src="/lib/velocity/velocity.min.js"></script>
   <script src="/lib/velocity/velocity.ui.min.js"></script>
